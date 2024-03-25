@@ -18,7 +18,6 @@ const AutoFilterDropdown = ({ data, property, valueChange }) => {
 
     const handleItemClick = (item) => {
         valueChange(item);
-        console.log(item.name);
         setFilterText(item[property]);
         setDropdownOpen((() => false))
     };
